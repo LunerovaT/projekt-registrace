@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
+import './registration.css';
 
 interface UserData {
   username: string;
@@ -41,8 +42,16 @@ export const Registration = () => {
   // JSX formulář
   return (
     <div className="registration-container">
-      <h2>REGISTRATION</h2>
       <div className="form-card">
+        <div className="icon-wrapper">
+          <div className="icon-circle">
+            <span role="img" aria-label="user">
+              👤
+            </span>
+          </div>
+        </div>
+
+        <h1>Registrace</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
